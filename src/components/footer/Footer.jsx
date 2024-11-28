@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className='mt-12 text-sm'>
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
         <div>
           <h5 className='font-bold mb-2'>Company</h5>
           <ul className='space-y-1'>
@@ -73,7 +73,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='mt-8 flex justify-between items-center'>
+      <div className='mt-8 flex flex-col md:flex-row justify-between items-center'>
         <p>© Copyright 2024. All Rights Reserved By Redtilt</p>
         <div className='flex space-x-4'>
           <a href='#' className='hover:text-red-600'>

@@ -1,15 +1,17 @@
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
+import Contact from "./components/content/Contact";
+import Footer from "./components/footer/Footer";
+import Hero from "./components/header/Hero";
+import Navbar from "./components/header/Navbar";
+import Services from "./components/content/Services";
 
 const App = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <Services />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
