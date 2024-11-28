@@ -72,7 +72,7 @@ export default function Blog() {
       </section>
 
       {/* Reserve Call Section */}
-      <section className='max-w-6xl mx-auto grid md:grid-cols-2 gap-12'>
+      {/* <section className='max-w-6xl mx-auto grid md:grid-cols-2 gap-12'>
         <div>
           <h3 className='text-gray-400 mb-2'>Got a project in mind?</h3>
           <h2 className='text-3xl font-bold mb-8'>Reserve a Call</h2>
@@ -190,7 +190,7 @@ export default function Blog() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

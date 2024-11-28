@@ -42,12 +42,12 @@ const services = [
 ];
 
 const technologies = [
-  { name: "JavaScript", image: "/placeholder.svg?height=50&width=50" },
-  { name: "Flutter", image: "/placeholder.svg?height=50&width=50" },
-  { name: "Prisma", image: "/placeholder.svg?height=50&width=50" },
-  { name: "PostgreSQL", image: "/placeholder.svg?height=50&width=50" },
-  { name: "Remix", image: "/placeholder.svg?height=50&width=50" },
-  { name: "MongoDB", image: "/placeholder.svg?height=50&width=50" },
+  { name: "JavaScript", image: "/pic2.png" },
+  // { name: "Flutter", image: "/placeholder.svg?height=50&width=50" },
+  // { name: "Prisma", image: "/placeholder.svg?height=50&width=50" },
+  // { name: "PostgreSQL", image: "/placeholder.svg?height=50&width=50" },
+  // { name: "Remix", image: "/placeholder.svg?height=50&width=50" },
+  // { name: "MongoDB", image: "/placeholder.svg?height=50&width=50" },
 ];
 
 export default function Services() {
@@ -67,7 +67,7 @@ export default function Services() {
       {/* What we offer section */}
       <div className='container mx-auto px-4'>
         <h2 className='text-4xl font-bold text-center mb-4'>What we offer</h2>
-        <p className='text-center mb-12 text-gray-400'>
+        <p className='text-center w-max mx-auto px-2 py-1.5 mb-12 text-gray-400 border-4 border-[#670a0a] rounded-full'>
           Our Experts Will Help You In Following Fields
         </p>
 
@@ -75,23 +75,25 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className='relative bg-red-900/30 backdrop-blur-sm rounded-lg p-6 group hover:bg-red-900/40 transition-all duration-300'
+              className='relative bg-[#520404c9] backdrop-blur-sm rounded-lg group hover:bg-red-900/40 transition-all duration-300'
             >
-              <div className='absolute -top-4 -left-4 text-6xl opacity-10 font-bold'>
+              <div className='absolute -top-6 -left-2 text-9xl opacity-10 font-bold'>
                 0{index + 1}
               </div>
-              <div className='relative z-10'>
-                <span className='text-2xl mb-4 inline-block'>
-                  {service.icon}
-                </span>
-                <h3 className='text-xl font-semibold mb-4'>{service.title}</h3>
-                <ul className='space-y-2'>
+              <div className='relative z-10 flex flex-col min-h-96'>
+                <h3 className='h-20 text-3xl font-semibold pt-12 pl-8 mb-5'>
+                  <span className='text-3xl mb-4 inline-block'>
+                    {service.icon}
+                  </span>
+                  {service.title}
+                </h3>
+                <ul className='space-y-2 flex-1 bg-[#670a0a] border-t-[6px] border-l-[6px] border-[#771b1b] w-2/3 p-4 ml-auto rounded-ss-xl'>
                   {service.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className='flex items-center text-sm text-gray-300'
+                      className='flex items-center font-semibold text-gray-300'
                     >
-                      <span className='w-1.5 h-1.5 bg-red-500 rounded-full mr-2'></span>
+                      <span className='w-2 h-2 bg-red-500 rounded-full mr-2'></span>
                       {item}
                     </li>
                   ))}
@@ -115,11 +117,12 @@ export default function Services() {
               .map((tech, index) => (
                 <div
                   key={index}
-                  className='w-20 h-20 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity'
+                  className='w- h- flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity'
                 >
                   <img
                     src={tech.image}
                     alt={tech.name}
+                    // className='max-w-full max-h-full object-contain'
                     className='max-w-full max-h-full object-contain'
                   />
                 </div>
